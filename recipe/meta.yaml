@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - iminuit <2.0
+    - iminuit >=2.0
     - matplotlib-base
     - numpy
     - python >=3.6
