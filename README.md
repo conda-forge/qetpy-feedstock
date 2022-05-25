@@ -5,7 +5,7 @@ Home: https://github.com/ucbpylegroup/QETpy
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qetpy-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qetpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: TES Detector Calibration and Analysis Python Tools
 
@@ -24,8 +24,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15104&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qetpy-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15104&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qetpy-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -48,16 +48,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `qetpy` can be installed with:
+Once the `conda-forge` channel has been enabled, `qetpy` can be installed with `conda`:
 
 ```
 conda install qetpy
 ```
 
-It is possible to list all of the versions of `qetpy` available on your platform with:
+or with `mamba`:
+
+```
+mamba install qetpy
+```
+
+It is possible to list all of the versions of `qetpy` available on your platform with `conda`:
 
 ```
 conda search qetpy --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search qetpy --channel conda-forge
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search qetpy --channel conda-forge
+
+# List packages depending on `qetpy`:
+mamba repoquery whoneeds qetpy --channel conda-forge
+
+# List dependencies of `qetpy`:
+mamba repoquery depends qetpy --channel conda-forge
 ```
 
 
@@ -75,10 +100,12 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
-packages to the [conda-forge](https://anaconda.org/conda-forge)
-[Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
+[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
+[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
+[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
+it is possible to build and upload installable packages to the
+[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
