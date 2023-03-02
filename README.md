@@ -1,11 +1,11 @@
-About qetpy
-===========
+About qetpy-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qetpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ucbpylegroup/QETpy
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qetpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: TES Detector Calibration and Analysis Python Tools
 
