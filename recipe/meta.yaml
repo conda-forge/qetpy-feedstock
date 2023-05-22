@@ -26,6 +26,7 @@ requirements:
     - scipy
     - sympy
     - astropy
+    - pandas
 
 test:
   imports:
@@ -36,7 +37,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/ucbpylegroup/QETpy
+  home: https://github.com/spice-herald/QETpy
   summary: TES Detector Calibration and Analysis Python Tools
   license: GPL-2.0-or-later
   license_file: LICENSE
