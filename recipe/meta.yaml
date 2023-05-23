@@ -1,5 +1,5 @@
 {% set name = "qetpy" %}
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/QETpy-{{ version }}.tar.gz
-  sha256: 969e081e2483f93b80ba5e564df4b716571162ad1a5777d9bda2d2856ac209e3
+  sha256: 674370fe6abfcaed792f7c165db7f15933d4b671b22cf47b6e710214130a140e
 
 build:
   number: 0
@@ -26,6 +26,7 @@ requirements:
     - scipy
     - sympy
     - astropy
+    - pandas
 
 test:
   imports:
@@ -36,7 +37,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/ucbpylegroup/QETpy
+  home: https://github.com/spice-herald/QETpy
   summary: TES Detector Calibration and Analysis Python Tools
   license: GPL-2.0-or-later
   license_file: LICENSE
