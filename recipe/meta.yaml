@@ -27,6 +27,7 @@ requirements:
     - sympy
     - astropy
     - pandas
+    - packaging
 
 test:
   imports:
