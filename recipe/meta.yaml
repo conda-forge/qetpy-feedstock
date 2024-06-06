@@ -1,5 +1,5 @@
 {% set name = "qetpy" %}
-{% set version = "1.6.8" %}
+{% set version = "1.6.9" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/QETpy-{{ version }}.tar.gz
-  sha256: 0db2f56ee110b28a98eba80c27bfa7ba627532ed9c3d1f9bd40933a9d6dbc8bd
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 0599babb9e14a584e22c64f81251bc62ade36858ee7e0cced526bbaf31b284eb
 
 build:
   number: 0
